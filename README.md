@@ -1,4 +1,4 @@
-# MosDetection
+# MosViz
 
 ## Introduction 
 MosViz is a python script implemented to rapidly detect **potential mosaicism in trios**, distinguishing inherited heterozygosity from de novo variants, based on read depth count and percentage of each nucleotide at a specific variant position.
