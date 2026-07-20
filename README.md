@@ -1,7 +1,7 @@
-# MosViz
+# MosaicViz
 
 ## Introduction 
-MosViz is a python script implemented to rapidly detect **potential mosaicism in trios**, distinguishing inherited heterozygosity from de novo variants, based on read depth count and percentage of each nucleotide at a specific variant position.
+MosaicViz is a python script implemented to rapidly detect **potential mosaicism in trios**, distinguishing inherited heterozygosity from de novo variants, based on read depth count and percentage of each nucleotide at a specific variant position.
 
 We utilized [bam-readcount](https://github.com/genome/bam-readcount?tab=readme-ov-file) v1.0.1 to determine the count of each nucleotide in each variant position.
 
@@ -55,7 +55,7 @@ To streamline access and analysis, BAM files are stored into a single directory.
 #### Script execution: 
 
 ```
-python3 MosViz.py bam-readcount referenceSequence MAPQvalue CSV BAMsDirectory baseAnalysisExtensionValue lowerThresholdValue upperThresholdValue
+python3 MosaicViz.py bam-readcount referenceSequence MAPQvalue CSV BAMsDirectory baseAnalysisExtensionValue lowerThresholdValue upperThresholdValue
 ```                                         
 #### Parameters:
 - **`bam-readcount`**: path to bam-readcount executable file 
@@ -86,7 +86,7 @@ In addition, the background noise is calculated to discriminate between false po
 In the INDEL-specific output are present 2 additional columns: the first displays the count of the identified target INDEL at the given position, while the second its aboundance percentage. The deletion analysis sheet displays the counts in a column marked “DEL:-deletion”. Similarly, for insertions, the data appears under “INS:+insertion”.
 
 The four different Excel sheets are generated only when all variants type are available in the CSV file. 
-At the following link you can find an example: [MosVizOutput](https://github.com/AureliaIuliana/MosDetection/blob/main/outputExample.xlsx) 
+At the following link you can find an example: [MosaicVizOutput](https://github.com/AureliaIuliana/MosDetection/blob/main/outputExample.xlsx) 
 
 The parameters `lowerThresholdValue` and `upperThresholdValue` highlight in red all variant percentages that fall between the lower and upper thresholds, establishing the bounds for mosaicism. 
 Reference allele percentages (greater than the calculated trio background noise) and variant percentages outside the above thresholds are highlighted in yellow.
