@@ -9,7 +9,7 @@ The implemented script reprocess [bam-readcount](https://github.com/genome/bam-r
 
 The script execution produces an Excel file composed of four sheets, dedicated to the analysis of **SNVs**, **deletions**, **insertions**, and **delins** being explored, respectively. 
 ## Project organization 
-
+```
 MosaicViz/
 ├── input/
 │   ├── allbams/            # BAM and BAI alignment files 
@@ -29,6 +29,7 @@ MosaicViz/
 ├── environment.yml         # Conda environment definition (Conda-forge + Bioconda)
 ├── LICENSE
 └── README.md               # Tool overview and usage instructions
+```
 
 ## Installation
 ```
