@@ -75,7 +75,7 @@ To streamline access and analysis, BAM files are stored into a single directory.
 #### Script execution: 
 
 ```
-python3 MosaicViz.py bam-readcount referenceSequence MAPQvalue CSV BAMsDirectory baseAnalysisExtensionValue lowerThresholdValue upperThresholdValue
+python3 MosaicViz.py referenceSequence MAPQvalue CSV BAMsDirectory baseAnalysisExtensionValue lowerThresholdValue upperThresholdValue
 ```                                         
 #### Parameters:
 - **`bam-readcount`**: path to bam-readcount executable file 
