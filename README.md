@@ -10,11 +10,8 @@ The implemented script reprocess [bam-readcount](https://github.com/genome/bam-r
 The script execution produces an Excel file composed of four sheets, dedicated to the analysis of **SNVs**, **deletions**, **insertions**, and **delins** being explored, respectively. 
 
 ## Dependencies
-
-bam-readcount [installation](https://github.com/genome/bam-readcount?tab=readme-ov-file)
 ```
-  openpyxl 3.0.9
-  pandas 1.4.3
+conda env create --file environment.yml
 ```
 
 ## Input
