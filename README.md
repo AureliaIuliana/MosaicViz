@@ -9,9 +9,10 @@ The implemented script reprocess [bam-readcount](https://github.com/genome/bam-r
 
 The script execution produces an Excel file composed of four sheets, dedicated to the analysis of **SNVs**, **deletions**, **insertions**, and **delins** being explored, respectively. 
 
-## Dependencies
+## Installation
 ```
 conda env create --file environment.yml
+conda activate mosaicviz_env
 ```
 
 ## Input
