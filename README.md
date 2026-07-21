@@ -12,11 +12,11 @@ The script execution produces an Excel file composed of four sheets, dedicated t
 ```
 MosaicViz/
 ├── input/
-│   ├── allbams/            # BAM and BAI alignment files 
+│   ├── allbams/            # BAM and BAI alignment files directory 
 │   ├── hg19_simple_no_chr.fasta
-│   └── info.csv           # Sample metadata and target regions
-├── output/                 # Generated Excel results and log files
-│   └── results.xlsx  
+│   └── info.csv            # Sample metadata and target regions
+├── output/                 
+│   └── results.xlsx        # Generated Excel results and log files
 ├── src/
 │   ├── modules/
 │   │   ├── __init__.py
@@ -25,10 +25,10 @@ MosaicViz/
 │   │   ├── preprocessing.py
 │   │   └── snv_analysis.py
 │   ├── config.py
-│   └── MosDetection.py     # Main CLI execution entry point 
-├── environment.yml         # Conda environment definition (Conda-forge + Bioconda)
+│   └── MosDetection.py 
+├── environment.yml         
 ├── LICENSE
-└── README.md               # Tool overview and usage instructions
+└── README.md               
 ```
 
 ## Installation
