@@ -8,6 +8,27 @@ We utilized [bam-readcount](https://github.com/genome/bam-readcount?tab=readme-o
 The implemented script reprocess [bam-readcount](https://github.com/genome/bam-readcount?tab=readme-ov-file) output, retaining only the depth, ref and alt alleles count data. Additionally, it incorporates supplementary information, including pedigree details, unique identifiers, and the gene symbol associated with each variant. This approach allows for faster detection, saving time compared to manual count check in IGV.
 
 The script execution produces an Excel file composed of four sheets, dedicated to the analysis of **SNVs**, **deletions**, **insertions**, and **delins** being explored, respectively. 
+## Project organization 
+
+MosaicViz/
+├── input/
+│   ├── allbams/            # BAM and BAI alignment files 
+│   ├── hg19_simple_no_chr.fasta
+│   └── info.csv           # Sample metadata and target regions
+├── output/                 # Generated Excel results and log files
+│   └── results.xlsx  
+├── src/
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   ├── bamreadcount_exe.py
+│   │   ├── indels_analysis.py
+│   │   ├── preprocessing.py
+│   │   └── snv_analysis.py
+│   ├── config.py
+│   └── MosDetection.py     # Main CLI execution entry point 
+├── environment.yml         # Conda environment definition (Conda-forge + Bioconda)
+├── LICENSE
+└── README.md               # Tool overview and usage instructions
 
 ## Installation
 ```
