@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
 src/**/__pycache__/
-input/*.fasta*
-input/*.fasta.gz
+input/*fasta
+input/*fasta.fai
