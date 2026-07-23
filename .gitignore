@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+src/**/__pycache__/
+input/*.fasta*
+input/*.fasta.gz
+input/test_bams/*.bam
+input/test_bams/*.bam.bai
